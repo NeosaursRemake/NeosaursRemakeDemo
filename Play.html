@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title> Neosaurs Demo</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 960px; height: 600px; background: #FF9380"></canvas>
+    <script src="Build/Html Neo Demo.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/Html Neo Demo.data",
+        frameworkUrl: "Build/Html Neo Demo.framework.js",
+        codeUrl: "Build/Html Neo Demo.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "ilievski",
+        productName: "Neosaurs Demo",
+        productVersion: "1",
+      });
+    </script>
+  </body>
+</html>
